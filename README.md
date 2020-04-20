@@ -15,10 +15,6 @@ Plot: Finds y points for your polynomial function. Takes in arguments being coef
 
 Bonus functions
 
-Add: Takes in an unlimited number of arguments and returns their sum. 
-
-Subtract: Takes in two arguments and returns their difference. 
-
 Multiply: Takes in two arguments and returns their product. 
 
 Divide: Takes in two arguments and returns quotient.
