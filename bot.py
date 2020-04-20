@@ -85,13 +85,13 @@ async def backstory(ctx):
 async def power(ctx, a, y):
     await ctx.send(f"{ctx.author.display_name}, power: {a**y}")
 
-@bot.command(name = "linear systems", help="Solves linear systems of equations in the form of y = ax + b and y = cx + d. Enter the a, b, c, and d of the equations.")
+@bot.command(name = "linear_systems", help="Solves linear systems of equations in the form of y = ax + b and y = cx + d. Enter the a, b, c, and d of the equations.")
 async def linear_systems(ctx, a, b, c, d):    
     x = (d-b)/(a-c)    
     y = (a*x)+b    
     await ctx.send(f"Your x value is equal to {x} and your y value is equal to {y}")
     
-@bot.command("add and subtract", help = "takes values that you want to add and subtract. eg. putting in 12, -10, 1 would give you 3.")
+@bot.command("add_subtract", help = "takes values that you want to add and subtract. eg. putting in 12, -10, 1 would give you 3.")
 async def add_and_subtract(ctx, *args):
     await ctx.send(sum(*args))
     
