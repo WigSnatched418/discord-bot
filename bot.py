@@ -90,7 +90,18 @@ async def linear_systems(ctx, a, b, c, d):
     x = (d-b)/(a-c)    
     y = (a*x)+b    
     await ctx.send(f"Your x value is equal to {x} and your y value is equal to {y}")
+    
+@bot.command("add and subtract", help = "takes values that you want to add and subtract. eg. putting in 12, -10, 1 would give you 3.")
+async def add_and_subtract(ctx, *args):
+    await ctx.send(sum(*args))
+    
+@bot.command(name = "multiply", help= "multiplies two values")
+async def multiply(ctx, x,y):
+    await ctx.send(x*y)
 
+@bot.command(name = "divide", help = "divides two values")
+async def divide(ctx, x,y):
+    await ctx.send(x/y)
 
 
 
