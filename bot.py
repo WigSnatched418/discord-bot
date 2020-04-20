@@ -91,7 +91,7 @@ async def linear_systems(ctx, a, b, c, d):
     y = (a*x)+b    
     await ctx.send(f"Your x value is equal to {x} and your y value is equal to {y}")
     
-@bot.command("add_subtract", help = "takes values that you want to add and subtract. eg. putting in 12, -10, 1 would give you 3.")
+@bot.command(name="add_subtract", help = "takes values that you want to add and subtract. eg. putting in 12, -10, 1 would give you 3.")
 async def add_and_subtract(ctx, *args):
     await ctx.send(sum(*args))
     
