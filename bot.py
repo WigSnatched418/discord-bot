@@ -74,7 +74,7 @@ async def sqrt_simplifier(ctx, radicand:int):
         
 
 
-@bot.command(name = "plot", help = "")
+@bot.command(name = "plot", help = "Finds y points for your polynomial function. Takes in arguments being coefficients of the polynomial with account on those, which are 0s. The last argument will be a value of x you are willing to solve for.")
 async def plot(ctx, *args):
     argst=[float(i) for i in args]
     x=argst.pop()
